@@ -50,7 +50,7 @@ return (
           }}
         >
           <div className="ps-5">
-            <h2 className="logo-text">SPORT ME ID</h2>
+            <h2 className="logo-text">SPORTIFY</h2>
             <p className="logo-description">
               Connecting Athletes, Coaches, and Recruiters for Seamless Talent
               Discovery.

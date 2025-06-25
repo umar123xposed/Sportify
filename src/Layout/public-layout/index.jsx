@@ -80,7 +80,7 @@ export default function PublicLayout() {
                     className=" logo d-flex align-items-center"
                   >
                     <img src={logo} alt="" />
-                    <h3 className='d-sm-block d-none'>Sport me ID</h3>
+                    <h3 className='d-sm-block d-none'>SPORTIFY</h3>
                   </div>
                   <div className="search ">
 

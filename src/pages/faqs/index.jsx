@@ -103,7 +103,7 @@
 //                     check out your profile anytime. Wear It – Order QR patches
 //                     to sew on your jersey, warm-ups, bag—or even get it printed
 //                     on clothes! Wherever it goes, it helps promote YOU and your
-//                     sport. Sport Me ID is interactive - friends can follow each
+//                     sport. SPORTIFY is interactive - friends can follow each
 //                     other, show support with emoticons and send messages.
 //                   </p>
 //                   <p className="" style={{ color: "#fff", fontSize: "15px" }}>
@@ -191,7 +191,7 @@ const Faqs = () => {
                     check out your profile anytime. Wear It – Order QR patches
                     to sew on your jersey, warm-ups, bag—or even get it printed
                     on clothes! Wherever it goes, it helps promote YOU and your
-                    sport. Sport Me ID is interactive - friends can follow each
+                    sport. SPORTIFY is interactive - friends can follow each
                     other, show support with emoticons and send messages.`},
   {
     header: "Can I make updates to my profile?", body: `Absolutely! Your profile is designed to grow with you. Start
@@ -239,7 +239,7 @@ const Faqs = () => {
     },
     {
       header: "Can I connect with teammates?",
-      body: `Yes! Sport Me ID lets you follow teammates, send messages, and support each other with reactions. It's more than a profile—it's a community.`
+      body: `Yes! SPORTIFY lets you follow teammates, send messages, and support each other with reactions. It's more than a profile—it's a community.`
     }
   ];
 
@@ -264,7 +264,7 @@ const Faqs = () => {
 
   const QRCode = [
     {
-      header: "What is a Sport Me ID QR code?",
+      header: "What is a SPORTIFY QR code?",
       body: `It's a unique, scannable code that links to your profile. Share it anywhere and let people instantly view your sports journey.`
     },
     {

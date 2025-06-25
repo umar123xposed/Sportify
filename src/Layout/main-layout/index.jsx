@@ -201,7 +201,7 @@ export default function MainLayout() {
                     className=" logo d-flex align-items-center"
                   >
                     <img src={logo} alt="" />
-                    <h3>Sport me ID</h3>
+                    <h3>SPORTIFY</h3>
                   </div>
                   <div></div>
                   {/* <div className="search ">
@@ -1424,7 +1424,7 @@ export default function MainLayout() {
                     className=" logo d-flex align-items-center"
                   >
                     <img src={logo} alt="" />
-                    <h3>Sport me ID</h3>
+                    <h3>SPORTIFY</h3>
                   </div>
                   <div></div>
                   <div className="menu">
@@ -1905,7 +1905,7 @@ export default function MainLayout() {
 
       <Offcanvas isOpen={isOpen} toggle={toggle1} style={{ backgroundColor: "#3C3C3C", color: "white" }}>
         <OffcanvasHeader toggle={toggle1} className='fw-bold'>
-          Sport Me Id
+          SPORTIFY
         </OffcanvasHeader>
         <OffcanvasBody>
           <div className="menu d-flex flex-column gap-2">

@@ -83,7 +83,7 @@ export default function Signup() {
         </svg>
         <h4>Back</h4>
       </div> */}
-        <h2 className="login-main-heading">Sport Me ID</h2>
+        <h2 className="login-main-heading">SPORTIFY</h2>
 
         <p className="login-Description py-2">
           Connecting Athletes, Coaches, and Recruiters for Seamless Talent Discovery.

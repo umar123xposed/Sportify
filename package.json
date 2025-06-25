@@ -1,5 +1,7 @@
 {
-  "name": "new-project",
+  "name": "sportify",
+  "author": "umar.hussain2924@gmail.com",
+  "description": "A platform for managing sports teams and players.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
