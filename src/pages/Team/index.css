@@ -1,0 +1,70 @@
+.page-wrapper {
+
+  height: auto;
+}
+.slider_main-heading {
+  margin-top: 40px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.Search{
+  h4{
+  font-size: 16px ;
+  color: #fff;
+  width: 100%;
+
+}
+  input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffffff4d;
+    font-size: 16px;
+    margin-top: 54px;
+    width: 100%;
+
+  }
+
+}
+.newPlayerSlider {
+  display: flex;
+
+  overflow-x: scroll;
+
+
+
+}
+.players-grid{
+   display: flex;
+    align-items: center;
+    justify-content: left;
+   row-gap: 30px !important;
+    flex-wrap: wrap;
+
+  }
+  .swipper_slider{
+   height: auto !important;
+   width: 100%;
+
+  }
+  .selecttags{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    background-color: #373737;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+  .tagsss{
+    text-align: center;
+    background-color: #373737;
+    border: 1px solid gray;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    margin: 0 10px;
+    width: 100px;
+    cursor: pointer;
+  }

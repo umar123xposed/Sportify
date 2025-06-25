@@ -1,0 +1,69 @@
+.buy-store-card {
+  width: 180px;
+  border: none;
+  background-color: transparent !important;
+}
+
+.buy-store-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  height: 200px !important;
+}
+
+.buy-store-cart-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.buy-image {
+  width: 180px !important;
+  height: 120px !important;
+  object-fit: contain;
+}
+
+.buy-icon {
+  width: 25px;
+  height: 25px;
+
+}
+
+.buy-store-content {
+
+  img{
+    height: 25px;
+    object-fit: contain;
+  }
+
+  margin-top: 1rem;
+}
+
+.buyHead {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: var(--semibold-font);
+  font-weight: 500;
+  margin-bottom: 5px !important;
+  line-height: 24px !important
+}
+
+.buyPrice {
+  font-size: 18px;
+  font-family: var(--bold-font);
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.BuyStoreHeading {
+  font-size: var(--heading3-font);
+  font-family: var(--semibold-font);
+  font-weight: 600;
+}

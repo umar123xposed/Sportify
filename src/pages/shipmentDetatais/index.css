@@ -1,0 +1,24 @@
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 2px;
+  height: 100%;
+  background: #ccc;
+}
+
+.timeline li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  background: #0d6efd;
+  border-radius: 50%;
+}

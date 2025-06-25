@@ -1,0 +1,55 @@
+.qr-code {
+  text-align: center;
+  border-radius: 16px 16px 0 0;
+}
+
+.qr-header {
+
+  border-radius: 16px 16px 0px 0px;
+  background-color: #232323;
+  height: 60px;
+
+
+}
+
+.bar-bg {
+  width: 230px;
+  border-radius: 12px;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+
+  img {
+    height: 200px !important;
+    object-fit: contain;
+  }
+
+}
+
+.qr-profile {
+  img {
+    height: 30px;
+    object-fit: contain;
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+}
+
+.qr-actions {
+  cursor: pointer;
+  background-color: #232323;
+  border-radius: 12px;
+  padding: 15px;
+  
+  width: 5rem !important;
+
+  p {
+    color: #fff;
+    font-size: 12px !important;
+
+  }
+}

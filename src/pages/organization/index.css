@@ -1,0 +1,72 @@
+.organization-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+   
+    color: #ffffff; /* White text */
+    padding: 20px;
+}
+
+.organization-title {
+    color: #ffffff; /* White text for the title */
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.organization-card {
+    position: relative; /* Needed for absolute positioning of text/icon */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures image corners match card corners */
+    cursor: pointer;
+    margin: 10px; /* Space between cards */
+    flex: 1; /* Allows cards to grow and shrink */
+    min-width: 250px; /* Minimum width for cards */
+    max-width: 450px; /* Maximum width for cards */
+    height: 250px; /* Fixed height for the cards */
+    display: flex;
+    align-items: flex-end; /* Align content to the bottom */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s ease;
+    background-size: cover; /* Ensure background image covers the card */
+    background-position: center; /* Center the background image */
+}
+
+.organization-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Add specific background images for School and Club cards */
+.organization-card.school {
+    background-image: url('./../../assets/school-placeholder.jpg'); /* Placeholder image */
+}
+
+.organization-card.club {
+    background-image: url('./../../assets/club-placeholder.jpg'); /* Placeholder image */
+}
+
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Gradient overlay for text readability */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; /* White text for the name */
+}
+
+.arrow-icon {
+    color: #ffffff; /* White color for the arrow */
+    font-size: 24px;
+}

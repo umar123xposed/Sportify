@@ -1,0 +1,581 @@
+/* General page background and text color */
+/* Assuming a global background class like 'who-we-are-bg' is used elsewhere */
+/* Add page-specific dark background and padding */
+.purchase-container {
+  color: white; /* Default text color */
+  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+  padding-bottom: 40px; /* Add some padding at the bottom */
+}
+
+/* Header background with gradient */
+.purchase-header-bg {
+  background: linear-gradient(to right, #F27825, #D1244d);  /* Example gradient, replace with actual from image */
+  padding: 20px 0; /* Adjust padding as needed */
+  height: 100px;
+}
+
+/* Header Title */
+.purchase-header-bg h2 {
+    font-size: 1.8rem; /* Title font size */
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+
+/* Back button styles (reuse from other pages if available) */
+/* Ensure your existing back-btn styles are applied */
+.purchase-container .back-btn {
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.purchase-container .back-btn h4 {
+    color: white;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.purchase-container .back-btn svg {
+    fill: white;
+}
+
+
+/* Main Content Layout */
+/* Using Bootstrap grid with custom classes for structure */
+
+/* Left column for address and package sections */
+.purchase-left-col {
+  background-color: #373737;
+   
+}
+
+/* Right column for order summary */
+.purchase-right-col {
+    /* No specific styles needed here, handled by Col */
+}
+
+
+/* Section Titles (Shipping & Billing Address, Package) */
+.section-title {
+    font-size: 1.3rem; /* Title size */
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+/* Shipping & Billing Address Card */
+.address-card {
+    background-color: #2a2a2a; /* Dark card background */
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #444;
+    margin-bottom: 30px; /* Space below the address card */
+}
+
+/* Input Group styles for address fields */
+.address-card .form-group {
+    margin-bottom: 15px; /* Space between input groups */
+}
+
+/* Input field styles */
+.address-card .form-control {
+    background-color: #3a3a3a; /* Darker background for inputs */
+    border: 1px solid #555; /* Subtle border */
+    border-radius: 4px;
+    color: white; /* Input text color */
+    padding: 10px 15px;
+    font-size: 1rem;
+    width: 100%; /* Make input full width */
+}
+
+.address-card .form-control::placeholder {
+    color: #bbb; /* Placeholder text color */
+}
+
+.address-card .form-control:focus {
+    background-color: #444; /* Darker background on focus */
+    border-color: gold; /* Example focus color */
+    color: white;
+    outline: none;
+    box-shadow: none; /* Remove default shadow */
+}
+
+/* Custom styling for specific rows of inputs */
+.address-card .country-state-city-row .form-group {
+    margin-bottom: 0; /* Remove bottom margin within this row */
+}
+
+.address-card .country-state-city-row .col {
+    padding-left: 7.5px; /* Adjust padding for columns in this row */
+    padding-right: 7.5px; /* Adjust padding for columns in this row */
+}
+
+.address-card .country-state-city-row .col:first-child {
+    padding-left: 0; /* Remove left padding for the first column */
+}
+
+.address-card .country-state-city-row .col:last-child {
+    padding-right: 0; /* Remove right padding for the last column */
+}
+
+
+/* Package Card */
+.package-card {
+    background-color: #2a2a2a; /* Dark card background */
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #444;
+}
+
+.package-card .package-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.package-card .package-info {
+    display: flex;
+    align-items: center;
+}
+
+.package-card .package-image-previews {
+    display: flex;
+    margin-right: 15px;
+}
+
+.package-card .package-image-previews img {
+    width: 40px; /* Size of image previews */
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 5px; /* Space between images */
+}
+
+.package-card .package-details {
+    /* Container for package name, qty, price */
+}
+
+.package-card .package-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.package-card .package-qty-price {
+    font-size: 0.9rem;
+    color: #bbb; /* Lighter color */
+}
+
+.package-card .edit-button {
+    background-color: transparent;
+    color: gold; /* Gold color for text */
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.package-card .edit-button svg {
+    fill: gold; /* Gold color for the SVG icon */
+    margin-right: 5px;
+}
+
+
+/* Order Summary Card (Right Column) */
+.order-summary-card {
+    background-color: #373737; /* Dark card background */
+    border-radius: 20px;
+    padding: 20px;
+    
+    color: white;
+}
+
+
+.order-summary-card .summary-title {
+     font-size: 0.9rem; /* Title size */
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.order-summary-card .summary-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 8px; /* Space between lines */
+}
+
+.order-summary-card .summary-line span:first-child {
+    color: #bbb; /* Lighter color for labels */
+}
+
+.order-summary-card .summary-line span:last-child {
+    font-weight: bold;
+}
+
+
+.order-summary-card .total-line {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px; /* Space above total line */
+}
+
+
+/* Proceed to Checkout Button */
+.proceed-checkout-button {
+     background: linear-gradient(to right, #F7D16A, #F5A623); /* Gold gradient */
+    color: black;
+    border: none;
+    border-radius: 25px; /* More rounded shape */
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%; /* Button takes full width */
+    text-align: center;
+    margin-top: 25px; /* Space above the button */
+}
+
+
+/* Add responsiveness if needed using media queries */
+/* Example: Stack columns on smaller screens */
+@media (max-width: 767.98px) {
+    .purchase-left-col,
+    .purchase-right-col {
+        margin-bottom: 20px; /* Add space between columns when stacked */
+    }
+     .address-card .country-state-city-row .col {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 15px; /* Add space between stacked inputs */
+     }
+}
+
+.page-wrapper {
+  background: url(./../../assets/signinleftBg.png);
+  background-repeat: repeat-y;
+ }
+.quantity-card{
+ padding: 40px;
+ border-radius: 5px ;
+
+
+}
+.summary{
+
+  border-radius: 5px;
+
+  h3{
+    font-size: 16px;
+    color:#fff;
+
+  }
+label {
+    font-size: 14px;
+    font-weight: 300 !important;
+    color: #fff;
+  }
+}
+.location{
+
+  object-fit: contain;
+  background-color: #1b1b1b;
+  padding: 5px 10px;
+  img{
+    height: 40px;
+  }
+  h4{
+    font-size: 15px;
+    color: #fff;
+  }
+}
+.quantity-left{
+  img{
+    object-fit: contain;
+  }
+}
+
+.product-titleq {
+  font-size: 20px;
+  color: #fff;
+
+}
+
+.product-priceq {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.product-location-text {
+  color: var(--primary-color);
+  font-size: 16px;
+  padding-bottom: 0;
+
+
+}
+
+.location-image {
+  height: 17px;
+  object-fit: 'contain';
+
+}
+
+.feedback img {
+  height: 45px;
+  object-fit: contain;
+
+}
+
+.feedback-text {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.feedback-positive {
+  font-size: 14px;
+}
+
+.product-details {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.product-detail-item {
+  padding-top: 40px;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.product-name {
+  font-size: 16px;
+
+}
+
+.product-value {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.seemore {
+  color: var(--primary-color);
+}
+
+.product-discription {
+  font-size: 14px;
+}
+
+.map {
+
+  height: 140px;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  height: auto;
+}
+
+.see-all {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.similar-headings {
+  font-size: 24px;
+  font-weight: 600;
+
+}
+
+.grid-containerq {
+  display: flex;
+  /* Responsive grid */
+  column-gap: 25px;
+  row-gap: 25px;
+  flex-wrap: wrap;
+  /* Spacing between items */
+  padding: 16px 0 ;
+}
+
+.color-selection {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+.solidcard{
+  background-color: #373737;
+  padding: 20px;
+  border-radius: 20px;
+  
+}
+.inputfields{
+  background-color: rgb(77 77 77);
+  padding: 0 20px;
+}
+
+.selected-color {
+  border-radius: 50%;
+  padding: 5px;
+  border: 2px solid #fff;
+
+}
+
+.product-colorq {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 0;
+  font-weight: 300;
+}
+
+.categories {
+  column-gap: 10px;
+}
+
+.single-categoryq {
+  background-color: #232323;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 13px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff4d
+}
+.solid-btn-circle{
+  background-color: #4b4b4b;
+    color: #fff;
+    font-size: 14px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ffffff4d;
+    width: 30px;
+    cursor: pointer;
+
+}
+.quantity-count{
+  width: 40px;
+  height: 25px;
+  border-radius: 5px !important;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin: auto 7px;
+  padding-right: 5px;
+
+
+}
+.selected-cat {
+  background: var(--primary-grad-color1);
+  border: none;
+  color: #232323
+}
+
+.para-content {
+  color: #ffffff84;
+  font-size: "14px" !important;
+
+}
+
+.details-title {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.card-info{
+ border: 1px solid #ffffff4d;
+ height: 50px;
+ justify-content: space-between;
+ font-size: 14px;
+ color: #fff;
+ padding: auto 10px;
+ border-radius: 5px;
+
+
+}
+
+
+
+.payment-select-method {
+  h3 {
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+.payment-items {
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid #ffffff57;
+  border-radius: 12px;
+  padding: 10px 15px;
+
+  p {
+    font-size: 14px;
+    color: #fff;
+    padding-left: 6px;
+  }
+}
+
+.payment-details {
+  p {
+    font-size: 16px;
+    margin-left: 6px;
+    color: #fff;
+  }
+
+  input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #ffffff57;
+    padding-bottom: 10px;
+  }
+
+  .custom_elements {
+    margin-top: 13px;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #ffffff57;
+    padding-bottom: 10px;
+  }
+
+  label {
+    color: #fff;
+    font-size: 14px;
+  }}
+
+  .custom-section-box{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+  }
+     .custom-section-box:focus-visible {
+       border: none;
+     }
+  .custom-section-box option {
+   background-color: transparent;
+  }
+  .custom-options{
+      width: 100% !important;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        color: #1b1b1b;
+  }

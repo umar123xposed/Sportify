@@ -1,0 +1,198 @@
+.who-we-are-bg{
+  background: url("./../../assets/who-we-are.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: auto;
+  width:100%;
+
+}
+/* .who-we-are-heading {
+  color: var(--text-white);
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 30px;
+} */
+
+.who-we-are-Description {
+  color: var(--text-white);
+  font-size: 20px;
+  font-weight: 300 !important;
+}
+
+.home_profile_card {
+   border-radius: 5px !important;
+   border: 1px solid #fff;
+
+   h3{
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+   }
+
+   h4{
+
+     font-size: 14px;
+      color: #fff;
+      margin-left: 10px;
+   }
+         p {
+           font-size: 16px;
+           color: #fff;
+         }
+
+}
+    .bg-right {
+      background: url(./../../assets/bg_right.png);
+      background-size: cover;
+      height: 12;
+
+
+       h3{
+        font-size: 16px;
+        color: #fff;
+
+       }
+       img{
+          object-fit: contain;
+          height: 80px ;
+       }
+
+    }
+
+    .basic-card{
+
+  text-align: center;
+  padding: 40px;
+      h3{
+         font-size: 20px;
+         font-weight: 600;
+         color: #fff;
+      }
+      p{
+        font-size: 14px;
+          color: #fff;
+          width: 80%;
+          margin: 10px auto ;
+      }
+    }
+
+    .basic-sidebar{
+margin-top: 20px;
+          /* width: 300px; */
+            color: white;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 8px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            /* position: fixed; */
+            right: 0;
+            height: 80vh;
+        h4{
+          font-size: 16px;
+          color: #fff;
+        }
+    }
+
+        .home_profile_card_min{
+border-radius: 12px !important;
+  border: 1px solid #fff;
+  margin: 5px 10px;
+  h3 {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 10px;
+  }
+
+  h4 {
+    margin-top: 3px;
+
+    font-size: 11px;
+    color: #fff;
+    margin-left: 10px;
+  }
+
+  p {
+    font-size: 11px;
+    color: #fff;
+  }
+  img{
+    height: 50px;
+  }
+        }
+.team-details{
+    h3{
+       color: #fff;
+       font-size: 18px;
+      }
+}
+.team-card{
+  background-color: #4b4b4b;
+  border-radius: 14px;
+  padding: 40px 20px ;
+  margin-bottom: 20px;
+}
+
+.team-card-item{
+   border-bottom: 1px solid #ffffff5f;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+
+  p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+
+  }
+
+}
+
+.basic-inputs {
+  label {
+    font-size: 14px;
+    color: #fff;
+  }
+}
+
+.input-transparent-blur {
+
+  img {
+    height: 43px;
+    object-fit: contain;
+  }
+
+}
+
+.auto-widt {
+  width: 120px !important;
+}
+
+.profile-image {
+  img {
+    height: 100px;
+    object-fit: contain;
+  }
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.postions {
+  width: fit-content !important;
+  display: flex !important;
+  padding-top: 0 !important;
+
+  span {
+    font-size: 14px;
+    padding-top: 0;
+
+  }
+
+}
+
+.addmore {
+  span {
+    font-size: 16px;
+  }
+
+}

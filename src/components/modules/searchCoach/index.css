@@ -1,0 +1,42 @@
+ .search {
+
+   align-self: center;
+   padding: 0 30px;
+
+   .search-bar {
+
+     border: 1px solid #ffffff5e;
+     background-color: #1E1E1E;
+     border-radius: 25px;
+     height: 40px;
+     padding: 3px 15px;
+     display: flex;
+     align-items: center;
+
+     svg {
+       margin-right: 10px;
+     }
+
+
+     input {
+       background-color: transparent;
+       border: transparent;
+       outline: none;
+       font-size: 14px;
+       padding: 5px;
+       color: #fff;
+     }
+
+   }
+ }
+
+ .payCard {
+   width: 100%;
+   cursor: pointer;
+
+   p {
+     color: #fff;
+     font-size: 16px;
+   }
+
+ }

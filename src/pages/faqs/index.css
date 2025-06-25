@@ -1,0 +1,139 @@
+.about-heading{
+  font-size: 34px ;
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+.selecttagz{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  
+  border-bottom: 1px solid #444;
+  padding: 5px 0px 25px 0px;
+  justify-content: start;
+ 
+}
+.tagz{
+  text-align: center;
+ 
+  border: 1px solid #555;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  margin: 0 15px 10px 0;
+  padding: 8px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tagz:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.active-tag {
+  background-color: #2c2c2c;
+  border-color: #2c2c2c;
+}
+
+.Faq_roles{
+ display: flex;
+ flex-wrap: wrap;
+ column-gap: 15px;
+}
+.role-button{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 8px;
+    padding: 5px 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+
+ label{
+  color: #fff;
+  font-size: 14px;
+ }
+}
+.accordion-item {
+  margin-bottom: 15px;
+  border: none !important;
+  /* background-color: #1a1a1a; */
+  border-radius: 8px;
+}
+
+.accordion-button{
+  background-color: #47474799  !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  border: 0.5px solid #444 !important;
+  padding: 15px 20px !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  color: white !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  position: relative;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #47474799  !important;
+  color: white !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom: none !important;
+}
+
+.acc-items .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='14' cy='14' r='14' fill='white'/%3e%3cpath d='M14.1484 6.50781C14.4917 6.54195 14.8145 6.69337 15.0605 6.93945L15.1602 7.0498C15.3788 7.31669 15.5 7.65199 15.5 8V12.5H20C20.3978 12.5 20.7792 12.6581 21.0605 12.9395C21.3419 13.2208 21.5 13.6022 21.5 14C21.5 14.3978 21.3419 14.7792 21.0605 15.0605C20.7792 15.3419 20.3978 15.5 20 15.5H15.5V20C15.5 20.3978 15.3419 20.7792 15.0605 21.0605C14.7792 21.3419 14.3978 21.5 14 21.5C13.6022 21.5 13.2208 21.3419 12.9395 21.0605C12.6581 20.7792 12.5 20.3978 12.5 20V15.5H8C7.65199 15.5 7.31669 15.3788 7.0498 15.1602L6.93945 15.0605C6.65815 14.7792 6.5 14.3978 6.5 14C6.5 13.6022 6.65815 13.2208 6.93945 12.9395L7.0498 12.8398C7.31669 12.6212 7.65199 12.5 8 12.5H12.5V8C12.5 7.60218 12.6581 7.22076 12.9395 6.93945L13.0498 6.83984C13.3167 6.62124 13.652 6.5 14 6.5L14.1484 6.50781Z' fill='%23030303' stroke='black'/%3e%3c/svg%3e") !important;
+  transform: rotate(0deg) !important;
+  transition: transform 0.2s ease-in-out !important;
+  right: 15px;
+  top: 25%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.acc-items .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='14' cy='14' r='14' fill='white'/%3e%3crect x='7' y='13' width='14' height='2' fill='%23030303'/%3e%3c/svg%3e") !important;
+  transform: rotate(0deg) !important;
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.accordion-body {
+  padding: 15px 20px !important;
+  color: #ccc !important;
+  font-size: 0.95rem !important;
+  background-color: #47474799 ;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 0.5px solid #444 !important;
+  border-top: none !important;
+}
+
+.solid{
+
+background-color: rgb(23, 23, 23);
+
+}

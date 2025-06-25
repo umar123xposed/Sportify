@@ -1,0 +1,11 @@
+.success-main{
+    height: 80vh;
+}
+.continuebutton{
+    background: linear-gradient(90deg, #DDA027 0.01%, #CE9B2B 31.98%, #FEF48E 68.02%, #FFD046 100%);
+    margin-top: 10px;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+}

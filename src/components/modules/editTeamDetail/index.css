@@ -1,0 +1,416 @@
+.who-we-are-bg{
+  background: url("./../../assets/who-we-are.png");
+  background-size: cover;
+  height: 100vh;
+  width:100%;
+
+}
+/* .who-we-are-heading {
+  color: var(--text-white);
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 30px;
+} */
+
+.who-we-are-Description {
+  color: var(--text-white);
+  font-size: 20px;
+  font-weight: 300 !important;
+}
+
+.back-btn {
+  align-items: center;
+  color: var(--text-white);
+
+  h4 {
+    font-size: 16px;
+  }
+
+  cursor: pointer;
+
+}
+
+.input-transparent-blur-fields{
+  label{
+    color: var(--text-white);
+    font-size: 14px;
+  }
+
+}
+.postions {
+  width: fit-content !important;
+  display: flex !important;
+  padding-top: 0 !important;
+
+  span {
+    font-size: 14px;
+    padding-top: 0;
+
+  }
+
+}
+
+.coach-team-creation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Background is typically set on a parent container or globally */
+    /* background-color: #1a1a1a; */
+    color: #ffffff; /* White text */
+    padding: 20px;
+}
+
+.backbutton {
+
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.back-icon {
+    margin-right: 5px;
+}
+
+.coach-team-creation-title {
+    color: #ffffff; /* White text for the title */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.progress-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.progress-indicator .step {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #444; /* Grey for incomplete steps */
+    margin: 0 5px;
+}
+
+.progress-indicator .step.active {
+    background-color: #FFD700; /* Gold for active/complete steps */
+}
+
+.progress-indicator .step + .step {
+     position: relative;
+}
+
+.progress-indicator .step + .step::before {
+    content: '';
+    position: absolute;
+    left: -10px; /* Adjust based on margin and step size */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /* Adjust based on margin */
+    height: 2px;
+    background-color: #444; /* Grey for lines */
+}
+
+.progress-indicator .step.active + .step::before {
+     background-color: #FFD700; /* Gold for lines between active steps */
+}
+
+
+.coach-team-creation-card {
+    background-color: #373737; /* Card background color from your CSS */
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+}
+
+.team-image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.team-placeholder .placeholder-icon {
+     font-size: 40px;
+     color: #cccccc;
+}
+
+.uploaded-team-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.uploadbutton {
+  background: linear-gradient(90deg, #DDA027 0.01%, #CE9B2B 31.98%, #FEF48E 68.02%, #FFD046 100%);
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  margin-left: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex
+;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #666;
+}
+
+.upload-icon {
+    margin-right: 5px;
+}
+
+.form-label {
+    color: #ffffff; /* Label color from your CSS */
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    background-color: #444 !important;
+    border: 1px solid gray;
+    color: #fff;
+}
+
+.form-input:focus {
+    background-color: #444 !important;
+    border-color: gray;
+    color: #fff;
+    box-shadow: none;
+}
+
+/* For react-select components */
+.select__control {
+    background-color: #444 !important;
+    border: 1px solid gray !important;
+    color: #fff !important;
+}
+
+.select__control--is-focused {
+    background-color: #444 !important;
+    border-color: gray !important;
+    box-shadow: none !important;
+}
+
+.select__menu {
+    background-color: #444 !important;
+    border: 1px solid gray;
+}
+
+.select__option {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.select__option--is-focused {
+    background-color: #555 !important;
+}
+
+.select__single-value {
+    color: #fff !important;
+}
+
+.select__input {
+    color: #fff !important;
+}
+
+.select__placeholder {
+    color: #999 !important;
+}
+
+/* For number inputs */
+input[type="number"] {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+input[type="number"]:focus {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+/* For the phone input */
+.iti {
+    width: 100%;
+}
+
+.iti__input {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.iti__input:focus {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.add-section {
+    margin-bottom: 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section-header .form-label {
+     margin-bottom: 0; /* Remove bottom margin for label in header */
+}
+
+.total-count {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon .form-input {
+    padding-right: 40px; /* Make space for the icon */
+}
+
+.plus-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #000000;
+    z-index: 4;
+}
+
+
+.added-members-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 10px; /* Space between added members */
+}
+
+.added-member-item {
+    background-color: #555; /* Darker background for added member tag */
+    border-radius: 20px; /* Rounded corners for tag */
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.added-member-item .member-info {
+     display: flex;
+     align-items: center;
+     margin-right: 5px;
+}
+
+.member-image {
+    width: 24px; /* Size of the member image */
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.member-placeholder-icon {
+    font-size: 24px;
+    color: #cccccc;
+    margin-right: 5px;
+}
+
+
+.remove-icon {
+    font-size: 16px;
+    color: #cccccc;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+.containerbutton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.next-button {
+    width: 70%; /* Button width from your CSS */
+    background: linear-gradient(90deg, #DDA027 0.01%, #CE9B2B 31.98%, #FEF48E 68.02%, #FFD046 100%); /* Button gradient from your CSS */
+    color: #2c2c2c; /* Button text color from your CSS */
+    border: none;
+    border-radius: 25px; /* Button border-radius from your CSS */
+    padding: 12px;
+    font-size: 0.9rem; /* Button font size from your CSS */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.next-button:hover {
+     background: linear-gradient(to right, #FFA500, #FFD700); /* Button hover gradient */
+}
+
+.validation-text {
+    color: red; /* Style for validation messages */
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Add or update these styles in your coach-team-creation/index.css file */
+
+/* For all Input components from reactstrap */
+.form-control {
+    background-color: #444 !important;
+    border: 1px solid gray !important;
+    color: #fff !important;
+}
+
+.form-control:focus {
+    background-color: #444 !important;
+    border-color: gray !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+/* Specifically for text inputs */
+/* input[type="text"] {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+input[type="text"]:focus {
+    background-color: #444 !important;
+    color: #fff !important;
+} */
+
+/* For reactstrap Input component */
+.Input {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.Input:focus {
+    background-color: #444 !important;
+    color: #fff !important;
+}

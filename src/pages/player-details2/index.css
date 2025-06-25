@@ -1,0 +1,98 @@
+.page-wrapper {
+  height: auto;
+}
+.slider_main-heading {
+  margin-top: 40px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.Search{
+  h4{
+  font-size: 16px ;
+  color: #fff;
+  width: 100%;
+
+}
+  input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffffff4d;
+    font-size: 16px;
+    margin-top: 54px;
+    width: 100%;
+
+  }
+
+}
+.newPlayerSlider {
+  display: flex;
+
+  overflow-x: scroll;
+
+
+
+}
+.players-grid{
+   display: flex;
+    align-items: center;
+    justify-content: left;
+   row-gap: 30px !important;
+    flex-wrap: wrap;
+
+  }
+  .swipper_slider{
+   height: auto !important;
+   width: 100%;
+
+
+  }
+
+  .profile-details{
+
+    h3 {
+      color: #fff;
+      font-size: 20px;
+
+    }
+
+    img{
+       height: 350px;
+       object-fit: contain;
+
+    }
+
+  }
+    .glass-bg {
+      /* From https://css.glass */
+      width: auto;
+      /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.11);
+      border-radius: 8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10.1px);
+      -webkit-backdrop-filter: blur(10.1px);
+      border: 1px solid rgba(255, 255, 255, 0.31);
+      padding-bottom: 40px;
+
+    }
+    .player-profile{
+      padding: 0 24PX;
+      h3{
+          font-size: 20px;
+          color:#fff
+       }
+    }
+    .detail-items{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ffffff4d;
+        padding: 20px 0PX;
+
+       h4{
+        font-size: 16px;
+        color: #fff;
+
+       }
+    }

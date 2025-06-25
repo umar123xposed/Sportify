@@ -1,0 +1,147 @@
+.who-we-are-bg{
+    background: url("./../../assets/who-we-are.png");
+    background-size: cover;
+    height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+  
+  }
+  .mainn{
+    display: flex;
+    justify-content: center;
+  }
+ 
+  
+  .who-we-are-Description {
+    color: var(--text-white);
+    font-size: 20px;
+    font-weight: 300 !important;
+  }
+  
+  .back-btn {
+    align-items: center;
+    color: var(--text-white);
+  
+    h4 {
+      font-size: 16px;
+    }
+  
+    cursor: pointer;
+  
+  }
+  .child-left-select{
+    padding-right: 20px;
+  
+    h4{
+      font-size: 20px;
+    color: #fff;
+    padding-bottom: 10px;
+    }
+    p{
+    font-size: 14px;
+      color: #fff;
+      font-weight: 300;
+  
+    }
+  
+  
+  
+  }
+  
+  
+  .child-right-select{
+    img{
+      object-fit: contain;
+      height: 28px;
+    }
+  
+      label {
+        display: flex;
+        cursor: pointer;
+        font-weight: 500;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 0.375em;
+  
+        /* Accessible outline */
+        /* Remove comment to use */
+        /*
+            &:focus-within {
+                    outline: .125em solid $primary-color;
+            }
+        */
+        input {
+          position: absolute;
+          left: -9999px;
+  
+          &:checked+span {
+            background-color: mix(#fff, #000, 84%);
+  
+            &:before {
+              box-shadow: inset 0 0 0 5px #000;
+              background:var(--primary-grad-color1);
+            }
+          }
+        }
+  
+        span {
+          display: flex;
+          align-items: center;
+          border-radius: 99em;
+          transition: 0.25s ease;
+  
+          &:hover {
+            background-color: mix(#fff, #000, 84%);
+          }
+  
+          &:before {
+            display: flex;
+            flex-shrink: 0;
+            content: "";
+            background: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+  
+            transition: 0.25s ease;
+            box-shadow: inset 0 0 0 0 #000;
+          }
+        }
+      }
+  
+  
+  }
+  
+  .category-cards-container {
+    padding: 20px 0;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .who-we-are-bg {
+        align-items: flex-start;
+        padding-top: 80px;
+        height: auto;
+        min-height: 100vh;
+        display: block;
+    }
+    
+    .category-cards-container {
+        padding: 10px;
+        flex-direction: column;
+    }
+    
+    .category-cards-container .col {
+        padding: 10px 10px;
+        flex-basis: auto;
+        max-width: 100%;
+        margin: 0 auto !important;
+    }
+    
+    .category-cards-container .col .category-card {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+  }
+  

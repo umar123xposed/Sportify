@@ -1,0 +1,75 @@
+.page-wrapper {
+
+  height: auto;
+}
+.main-heading_key {
+  color: #fff;
+  font-weight: 600;
+}
+.main-heading_key_para{
+
+  color: #fff;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+
+}
+.Search{
+  h4{
+  font-size: 16px ;
+  color: #fff;
+  width: 100%;
+
+}
+  input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffffff4d;
+    font-size: 16px;
+    margin-top: 54px;
+    width: 100%;
+
+  }
+
+}
+.newPlayerSlider {
+  display: flex;
+
+  overflow-x: scroll;
+
+
+
+}
+.players-grid{
+   display: flex;
+   align-items: center;
+   justify-content: left;
+   row-gap: 30px !important;
+   flex-wrap: wrap;
+
+  }
+  .swipper_slider{
+   height: auto !important;
+   width: 100%;
+
+  }
+  .key-list{
+    h3{
+      font-size: 18px;
+      color: #fff;
+    }
+    .btn-white{
+      cursor: pointer;
+      background-color: #fff;
+      border-radius: 25px;
+      padding: 5px 15px;
+
+      label{
+         color:#000;
+         font-size: 15px;
+
+      }
+
+    }
+  }

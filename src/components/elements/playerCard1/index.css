@@ -1,0 +1,78 @@
+
+
+.player-card1-heading {
+    color: var(--text-white);
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .player-card1-Description {
+    color: var(--text-white);
+    font-size: 20px;
+    font-weight: 300 !important;
+  }
+  
+  .player-card1 {
+    border: 1px solid #ffffff36 ;
+    border-radius: 12px;
+    height: auto;
+    width: 240px;
+    
+    margin: 20px;
+    background-color: #000 ;
+  
+    img{
+      height:  120px;
+      width:120px;
+      object-fit: cover;
+      margin: 0 auto;
+  
+    }
+  
+  }
+  
+
+  
+  .player-card1-action {
+    cursor: pointer;
+    height: 60px;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+  
+    h3 {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: -10px;
+    }
+  
+    img {
+      object-fit: contain;
+      height: 30px;
+  
+  
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

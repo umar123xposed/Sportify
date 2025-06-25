@@ -1,0 +1,30 @@
+.mainwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: 'cover';
+
+}
+
+.mainwrapper input{
+        outline: none;
+}
+
+.sperate h2 {
+
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #d1d3d3;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    font-size: 14px;
+    color: #d1d3d3;
+ }
+
+ .sperate h2 span {
+     background:#fff;
+     padding:0 5px;
+ }
+

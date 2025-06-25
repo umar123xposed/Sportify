@@ -1,0 +1,33 @@
+
+/* Adedd */
+.skeleton-loader {
+    width: 100%;
+    height: auto;
+    /* Adjust the height based on your design */
+    background: #f2f2f2;
+    /* Adjust the background color */
+    overflow: hidden;
+}
+
+.skeleton-image {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #f2f2f2 25%, #D9D9D9 50%, #f2f2f2 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s linear infinite;
+    /* Use 'linear' easing for a smoother effect */
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0% 0;
+    }
+}

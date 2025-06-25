@@ -1,0 +1,253 @@
+.my-organization-container {
+    padding: 30px;
+    color: white;
+  }
+  .selecttag{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 15px;
+    background-color: #373737;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+  .tagss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #373737;
+    border: 1px solid gray;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    margin: 0 10px;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .tagss.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #141414;
+    border: 1px solid gray;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    margin: 0 10px;
+    width: 100px;
+    cursor: pointer;
+  }
+  .club-tag {
+    background-color: #333; /* Dark background for the tag */
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .club-name-title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .tabs-container {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .tab-button {
+    background-color: #555; /* Default tab background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-button.active {
+    background-color: #888; /* Active tab background */
+  }
+  
+  .tab-button:hover {
+    background-color: #777;
+  }
+  
+  .detailed-info-card,
+  .club-code-card {
+    background-color: #373737; /* Darker background for the card */
+    border: 1px solid #555; /* Subtle border */
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .card-title-custom {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* Removed margin-bottom: 20px; as d-flex handles spacing with mb-3 on parent div */
+  }
+  
+  .edit-button-custom {
+    color: #ffffff; /* Edit button color */
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400; /* Adjusted font-weight */
+  }
+  
+  .edit-button-custom:hover {
+    color: #fff;
+  }
+  
+  .info-item {
+    display: flex;
+    justify-content: space-between; /* Ensures labels and values are spaced out */
+    align-items: center;
+    padding: 12px 0; /* Slightly more padding for rows */
+  
+  }
+  
+  .info-item:last-child {
+    border-bottom: none; /* No border for the last item */
+  }
+  
+  .info-label {
+    flex-basis: 40%; /* Adjust width for label column */
+    font-weight: 400;
+    color: #ccc; /* Label color */
+    font-size: 1rem;
+    text-align: left; /* Ensure left alignment */
+  }
+  
+  .info-value {
+    flex-basis: 60%; /* Adjust width for value column */
+    font-weight: 500;
+    color: #fff; /* Value color */
+    font-size: 1rem;
+    text-align: right; /* Ensure right alignment */
+  }
+  
+  .club-code-display {
+    background-color: #555; /* Code display background */
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .club-code-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .copy-button-custom {
+    color: #bbb; /* Copy button color */
+    font-size: 1.2rem;
+  }
+  
+  .copy-button-custom:hover {
+    color: #fff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .club-name-title {
+      font-size: 2rem;
+    }
+  
+    .tab-button {
+      padding: 8px 15px;
+      font-size: 1rem;
+    }
+  
+    .card-title-custom {
+      font-size: 1.2rem;
+    }
+  
+    .info-label,
+    .info-value {
+      font-size: 0.9rem;
+    }
+  
+    .club-code-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .my-organization-container {
+      padding: 15px;
+    }
+  
+    .info-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .info-label {
+      margin-bottom: 5px;
+      text-align: left; /* Ensure left alignment on small screens */
+      flex-basis: auto; /* Reset flex-basis for stacked layout */
+    }
+  
+    .info-value {
+      text-align: left; /* Ensure left alignment on small screens */
+      flex-basis: auto; /* Reset flex-basis for stacked layout */
+    }
+  }
+
+  /* For the dropdown toggle button */
+  .selecttag .dropdown-toggle.tagss {
+    background-color: #373737;
+    border: 1px solid gray;
+    color: white;
+    width: auto; /* Allow width to adjust to content */
+    min-width: 100px; /* Keep a minimum width for consistency */
+    padding: 5px 15px; /* Adjust padding for better look */
+    display: flex; /* To align caret */
+    justify-content: space-between; /* To push caret to the right */
+    align-items: center;
+  }
+
+  /* Styling for the dropdown menu itself */
+  .dropdown-menu.dark {
+    background-color: #373737; /* Same as card background */
+    border: 1px solid #555; /* Same as card border */
+    border-radius: 8px;
+    padding: 5px 0;
+  }
+
+  /* Styling for individual dropdown items */
+  .dropdown-menu.dark .dropdown-item {
+    color: #fff; /* White text for items */
+    background-color: transparent;
+    padding: 8px 15px;
+  }
+
+  .dropdown-menu.dark .dropdown-item:hover {
+    background-color: #555; /* Highlight on hover */
+    color: #fff;
+  }
+
+  .dropdown-menu.dark .dropdown-item.header {
+    color: #ccc; /* Slightly muted header text */
+    font-weight: bold;
+    padding: 8px 15px;
+  }
+
+  .dropdown-menu.dark .dropdown-item.divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+  }

@@ -1,0 +1,19 @@
+
+:root {
+
+  --text-black: #000000;
+  --text-white: #ffffff;
+  --primary-grad-color1:  linear-gradient(90deg, #DDA027 0.01%, #CE9B2B 31.98%, #FEF48E 68.02%, #FFD046 100%);
+
+  --primary-grad-color2:linear-gradient(90.46deg, #F27825 0.4%, #9747FF 99.66%);
+  --slider-grad2:linear-gradient(90.64deg, #9747FF -0.54%, #D1244D 99.55%);
+  --primary-grad-color3: linear-gradient(90.46deg, #F27825 0.4%, #9747FF 99.66%);
+
+  --primary-grad-slider-color1 : linear-gradient(90.64deg, #F27825 -0.54%, #D1244D 99.55%);
+
+
+  --primary-font:'Arial';
+  --secondary-font: 'Blockletter';
+  --social-btn-bg: #EFEDEC;
+}
+

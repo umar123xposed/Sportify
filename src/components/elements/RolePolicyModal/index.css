@@ -1,0 +1,122 @@
+p{
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+.role-policy-modal .modal-content {
+    background-color: #2C2C2C; /* Dark background */
+    color: #FFFFFF; /* White text */
+    border-radius: 10px;
+    padding: 20px;
+    border: 8px
+}
+
+.role-policy-modal-body {
+    position: relative;
+    padding: 15px;
+    background-color: #241C19;
+    
+    border-radius: 10px
+}
+
+.modal-close-icon {
+    position: absolute;
+    top: -18px;
+    right: -9px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FFFFFF;
+    z-index: 10;
+}
+
+.policy-section, .role-section {
+    /* margin-bottom: 20px;
+    padding-bottom: 20px; */
+
+}
+
+.policy-section:last-child, .role-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.policy-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.policy-header .info-icon {
+    color: #FFF; /* Gold color for emphasis */
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.policy-header h3, .role-title h4{
+    color: #fff; /* Gold color for headings */
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.role-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.role-title svg {
+     color: #FFF; /* Gold color for icons */
+     margin-right: 10px;
+}
+
+
+.role-section p, .role-section ul {
+    color: #fff; /* Lighter text for content */
+    
+    line-height: 1.5;
+}
+
+.role-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.role-section li {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+}
+
+.continue-button-container {
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.continue-button {
+    
+    color: #000000; /* Dark text for button */
+    background: linear-gradient(to right, #DDA027, #CE9B2B, #FEF48E, #FFD046);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 13px;
+    cursor: pointer;
+    width: 50%;
+    
+}
+
+.continue-button:hover {
+     background: linear-gradient(to right, #FFA500, #FFD700);
+}
+hr{
+    height: 1px;
+    color: #fff;
+    width: 90%;
+    margin: 1rem auto;
+}
+.role-section h5, .role-section h6{
+    font-size:0.9rem;
+    font-weight:bold
+}

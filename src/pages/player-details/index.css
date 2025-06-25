@@ -1,0 +1,402 @@
+.page-wrapper {
+  height: auto;
+}
+
+.slider_main-heading {
+  margin-top: 40px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.Search {
+  h4 {
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+
+  }
+
+  input {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffffff4d;
+    font-size: 16px;
+    margin-top: 54px;
+    width: 100%;
+
+  }
+
+}
+
+.newPlayerSlider {
+  display: flex;
+
+  overflow-x: scroll;
+
+
+
+}
+
+.players-grid {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  row-gap: 30px !important;
+  flex-wrap: wrap;
+
+}
+
+.swipper_slider {
+  height: auto !important;
+  width: 100%;
+
+
+}
+
+.profile-details {
+
+  h3 {
+    color: #fff;
+    font-size: 20px;
+
+  }
+
+  img {
+    height: 350px;
+    object-fit: contain;
+
+  }
+
+}
+
+.glass-bg {
+  /* From https://css.glass */
+  width: auto;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.1px);
+  -webkit-backdrop-filter: blur(10.1px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  padding-bottom: 40px;
+
+}
+
+.player-profile {
+  padding: 0 30PX;
+
+  h3 {
+    font-size: 20px;
+    color: #fff
+  }
+}
+
+.detail-items {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff4d;
+  padding: 20px 0PX;
+
+  h4 {
+    font-size: 16px;
+    color: #fff;
+
+  }
+}
+
+/* Basic background and text color */
+.player-details-container {
+  /* background-color: #1a1a1a; */
+  /* Dark background from image */
+  color: white;
+  /* Default text color */
+  min-height: 100vh;
+  /* Ensure it takes at least the full viewport height */
+  padding-bottom: 40px;
+  /* Add padding at the bottom */
+}
+
+/* Header background with gradient */
+.profile-header-bg {
+  background: linear-gradient(to right, #F27825, #D1244d);
+  /* Example gradient, replace with actual Basic Profile gradient */
+  padding: 20px 0;
+  /* Adjust padding as needed */
+  height: 200px;
+}
+
+.container-post {
+  top: 80px
+}
+
+/* Title in header */
+
+
+/* Back button styles (reuse from other pages if available) */
+.back-btn {
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.back-btn h4 {
+  color: white;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.back-btn svg {
+  fill: white;
+}
+
+
+/* Profile Info Card styling */
+.profile-info-card {
+  background-color: #0e0e0e;
+  /* Darker background for the card */
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.profile-lg-image {
+  width: 150px;
+  /* Larger profile image */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.player-name {
+  font-size: 1.2rem !important;
+  /* Adjust name font size */
+  font-weight: bold;
+  color: white;
+}
+
+.player-id {
+  font-size: 1rem !important;
+  color: #bbb;
+  /* Lighter color for ID */
+}
+
+/* Edit Profile Button */
+.edit-profile-btn {
+  height: auto;
+  width: fit-content;
+  background-color: transparent;
+  /* Darker background for button */
+  color: white;
+  border: 1px solid gold;
+  border-radius: 20px;
+  /* Pill shape */
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+}
+
+.follow-btn {
+
+
+  height: auto;
+  width: fit-content;
+  background: var(--primary-grad-color1);
+  /* Darker background for button */
+  color: black;
+  border: 1px solid gold;
+  border-radius: 20px;
+  /* Pill shape */
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+}
+
+.edit-profile-btn svg {
+  margin-right: 5px;
+  /* Adjust icon color if needed */
+}
+
+
+/* Stats Row */
+.stats-row .stat-value {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.stats-row .stat-label {
+  font-size: 0.8rem;
+  color: #bbb;
+  /* Lighter color for labels */
+}
+
+/* Circular Icons Row */
+.circular-icons-row .circular-icon {
+  width: 50px;
+  /* Size of the circular icon area */
+  height: 50px;
+  border-radius: 50%;
+  background-color: #6c6c6c;
+  /* Background for the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  /* Adjust size for emoji placeholders if used */
+  color: white;
+  /* Color of icon/emoji */
+  /* Add border if needed, e.g., border: 1px solid #555; */
+}
+
+.circular-icons-row .icon-label {
+  font-size: 0.8rem;
+  color: white;
+  /* Label color */
+}
+
+
+/* My Sports Section */
+.section-title-sm {
+  font-size: 1.3rem;
+  /* Smaller title size */
+  color: white;
+}
+
+/* Add Sport Button */
+.add-sport-btn {
+  height: auto;
+  width: fit-content;
+  background-color: transparent;
+  color: white;
+  /* Gold color for the button text */
+  border: 1px solid gold;
+  /* Gold border */
+  border-radius: 20px;
+  /* Pill shape */
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.add-sport-btn svg {
+  margin-right: 5px;
+  fill: white
+    /* Gold color for the plus icon */
+}
+
+
+/* My Sports List Item */
+.my-sport-item {
+  background-color: #2a2a2a;
+  /* Darker background */
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  /* Space between items */
+  cursor: pointer;
+  color: white;
+}
+
+.my-sport-item span {
+  font-size: 1rem;
+  /* Adjust font size for sport name */
+}
+
+.my-sport-item svg {
+  /* Style for the QR icon and arrow icon */
+  fill: white;
+  /* Example color */
+}
+
+.card {
+
+  background-color: #353535;
+  font-size: 1rem;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.profile-reacted {
+  cursor: pointer;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-grad-color1);
+  color: black;
+  font-size: 16px;
+  padding: 3px 14px;
+  border-radius: 50px;
+
+}
+
+
+
+.profile-reacted svg {
+  background-color: white;
+  border-radius: 100px;
+  padding: 3px;
+}
+
+
+.profile-react {
+  cursor: pointer;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 3px 14px;
+  border-radius: 50px;
+
+}
+
+.media-wrapper {
+  /* overflow: visible; */
+ 
+}
+
+.media-wrapper .remove-icon {
+  position: absolute;
+  top: 1px;
+  right: -5px;
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  height: 18px;
+  width: 18px;
+  padding: 0px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  z-index: 9;
+}
+
+.media-wrapper:hover .remove-icon {
+  display: block;
+}

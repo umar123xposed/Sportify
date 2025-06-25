@@ -1,0 +1,18 @@
+// vite.config.js
+import { defineConfig } from "file:///C:/data/Office%20Projects/sport-web/sport-web/node_modules/vite/dist/node/index.js";
+import react from "file:///C:/data/Office%20Projects/sport-web/sport-web/node_modules/@vitejs/plugin-react/dist/index.mjs";
+var vite_config_default = defineConfig({
+  plugins: [react()],
+  server: {
+    host: true,
+    // Allow access from other devices
+    port: 5173,
+    // Default Vite port, change if needed
+    strictPort: true
+    // Ensures the specified port is used
+  }
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcuanMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJDOlxcXFxkYXRhXFxcXE9mZmljZSBQcm9qZWN0c1xcXFxzcG9ydC13ZWJcXFxcc3BvcnQtd2ViXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ZpbGVuYW1lID0gXCJDOlxcXFxkYXRhXFxcXE9mZmljZSBQcm9qZWN0c1xcXFxzcG9ydC13ZWJcXFxcc3BvcnQtd2ViXFxcXHZpdGUuY29uZmlnLmpzXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ltcG9ydF9tZXRhX3VybCA9IFwiZmlsZTovLy9DOi9kYXRhL09mZmljZSUyMFByb2plY3RzL3Nwb3J0LXdlYi9zcG9ydC13ZWIvdml0ZS5jb25maWcuanNcIjtpbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICd2aXRlJ1xyXG5pbXBvcnQgcmVhY3QgZnJvbSAnQHZpdGVqcy9wbHVnaW4tcmVhY3QnXHJcblxyXG4vLyBodHRwczovL3ZpdGVqcy5kZXYvY29uZmlnL1xyXG5leHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoe1xyXG4gIHBsdWdpbnM6IFtyZWFjdCgpXSxcclxuICBzZXJ2ZXI6IHtcclxuICAgIGhvc3Q6IHRydWUsIC8vIEFsbG93IGFjY2VzcyBmcm9tIG90aGVyIGRldmljZXNcclxuICAgIHBvcnQ6IDUxNzMsIC8vIERlZmF1bHQgVml0ZSBwb3J0LCBjaGFuZ2UgaWYgbmVlZGVkXHJcbiAgICBzdHJpY3RQb3J0OiB0cnVlLCAvLyBFbnN1cmVzIHRoZSBzcGVjaWZpZWQgcG9ydCBpcyB1c2VkXHJcbiAgfSxcclxufSk7XHJcbiJdLAogICJtYXBwaW5ncyI6ICI7QUFBK1QsU0FBUyxvQkFBb0I7QUFDNVYsT0FBTyxXQUFXO0FBR2xCLElBQU8sc0JBQVEsYUFBYTtBQUFBLEVBQzFCLFNBQVMsQ0FBQyxNQUFNLENBQUM7QUFBQSxFQUNqQixRQUFRO0FBQUEsSUFDTixNQUFNO0FBQUE7QUFBQSxJQUNOLE1BQU07QUFBQTtBQUFBLElBQ04sWUFBWTtBQUFBO0FBQUEsRUFDZDtBQUNGLENBQUM7IiwKICAibmFtZXMiOiBbXQp9Cg==

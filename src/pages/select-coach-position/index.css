@@ -1,0 +1,319 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    color: #ffffff; /* White text */
+    padding: 20px;
+    width: 100vw;
+}
+
+.select-coach-position-card {
+    background-color: #373737; /* Slightly lighter dark for the card */
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px; /* Limit card width */
+}
+
+.select-coach-position-card h2 {
+    color: #FFD700; /* Gold color for heading */
+    margin-bottom: 20px;
+}
+
+.position-option {
+    background-color: #656565; /* Dark grey for options */
+    border:1px solid gray;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.position-option:hover {
+    background-color: #555; /* Darker grey on hover */
+}
+
+
+
+.option-content {
+    display: flex;
+    align-items: center;
+}
+
+.position-icon {
+    font-size: 0.9rem;
+    color: #ffffff; /* Gold color for icons */
+    margin-right: 15px;
+}
+
+
+
+.radio-button {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #CCCCCC; /* Light grey border for radio */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position-option.selected .radio-button {
+    border-color: #FFD700; /* Gold border when selected */
+}
+
+.radio-inner {
+    width: 12px;
+    height: 12px;
+    background-color: #FFD700; /* Gold fill when selected */
+    border-radius: 50%;
+}
+
+.next-button {
+    width: 100%;
+    background: linear-gradient(to right, #DDA027, #CE9B2B, #FEF48E, #FFD046);
+    color: #000000; /* Dark text */
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    width: 70%;
+    
+}
+
+.next-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+p{
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+.role-policy-modal .modal-content {
+    background-color: #2C2C2C; /* Dark background */
+    color: #FFFFFF; /* White text */
+    border-radius: 10px;
+    padding: 20px;
+    border: 8px
+}
+
+.role-policy-modal-body {
+    position: relative;
+    padding: 15px;
+    background-color: #241C19;
+    
+    border-radius: 10px
+}
+
+.modal-close-icon {
+    position: absolute;
+    top: -18px;
+    right: -9px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FFFFFF;
+    z-index: 10;
+}
+
+
+
+
+
+.policy-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.policy-header .info-icon {
+    color: #FFF; /* Gold color for emphasis */
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.policy-header h3, .role-title h4{
+    color: #fff; /* Gold color for headings */
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.role-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.role-title svg {
+     color: #FFF; /* Gold color for icons */
+     margin-right: 10px;
+}
+
+
+.role-section p {
+    color: #fff; /* Lighter text for content */
+    
+    line-height: 1.5;
+}
+
+
+.continue-button-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.continue-button {
+    
+    color: #000000; /* Dark text for button */
+    background: linear-gradient(to right, #DDA027, #CE9B2B, #FEF48E, #FFD046);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 13px;
+    cursor: pointer;
+    width: 40%;
+    
+}
+.back-button {
+    
+    color: #ffffff; /* Dark text for button */
+    border: 1px solid#DDA027;
+    background-color: transparent;
+
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 13px;
+    cursor: pointer;
+    width: 40%;
+    
+    
+}
+.back-button:hover{
+    color:#000000;
+    background: linear-gradient(to right, #FFA500, #FFD700);
+}
+
+.continue-button:hover {
+     background: linear-gradient(to right, #FFA500, #FFD700);
+}
+hr{
+    height: 1px;
+    color: #fff;
+    width: 90%;
+    margin: 1rem auto;
+}
+.role-section h5, .role-section h6{
+    font-size:0.9rem;
+    font-weight:bold
+}
+
+
+.folder-modal .modal-content {
+  
+    background: #232323;
+    border-radius: 18px;
+    padding: 0;
+    border: none;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  }
+  .folder-modal-content {
+    border-radius: 18px;
+    background-color: #373737;
+    padding: 36px 32px 28px 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    
+  }
+  .folder-modal-close {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+  
+    background: white;
+    border-radius: 18px;
+    color: #000000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+  }
+  .folder-modal-label {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    align-self: flex-start;
+  }
+  .folder-modal-input {
+    width: 100%;
+    background: #484848;
+    border: 1px solid #555;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 14px;
+    margin-bottom: 32px;
+    outline: none;
+  }
+  .folder-modal-input::placeholder {
+    color: #aaa;
+  }
+  .folder-modal-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 18px;
+  }
+  .folder-modal-cancel {
+    flex: 1;
+    background: transparent;
+    border: 1.5px solid gold;
+    color: #fff;
+    border-radius: 22px;
+    padding: 10px 0;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+  }
+  .folder-modal-cancel:hover {
+    background: gold;
+    color: #232323;
+  }
+  .folder-modal-create {
+    flex: 1;
+    background: linear-gradient(90deg, #DDA027 0.01%, #CE9B2B 31.98%, #FEF48E 68.02%, #FFD046 100%);
+  
+    border: none;
+    color: #232323;
+    border-radius: 22px;
+    padding: 10px 0;
+    font-size: 1rem;
+    
+    transition: background 0.2s, color 0.2s;
+  }
+  .folder-modal-create:disabled {
+    background: #5f5f5f;
+    color: #232323;
+  }
+  @media (max-width: 500px) {
+    .folder-modal-content {
+      padding: 24px 10px 18px 10px;
+      min-width: 0;
+      max-width: 95vw;
+    }
+  }
+
+
+

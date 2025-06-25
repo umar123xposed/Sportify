@@ -1,0 +1,341 @@
+/* General page container */
+.team-page-container {
+    min-height: 100vh;
+    padding: 40px 0; /* Add padding top and bottom */
+    color: white; /* Default text color */
+    font-family: sans-serif; /* Use a common sans-serif font or your project's font */
+}
+
+/* Team Header Section */
+.team-header {
+    background-color: #2a2a2a; /* Slightly lighter dark background */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #3a3a3a; /* Subtle border */
+}
+
+.team-header .row {
+    align-items: center; /* Vertically align items in the row */
+}
+
+.team-logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.team-logo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.team-info {
+    /* Styles for team name and counts */
+}
+
+.team-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.team-counts {
+    font-size: 0.9rem;
+    color: #fff; /* Lighter text color */
+    margin-bottom: 5px;
+}
+
+.coach-name-tag {
+    display: inline-block;
+    padding:4px 24px;
+    color: #eee; /* Light text */
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border:1px solid grey;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.team-stats {
+    background-color: #3a3a3a; /* Dark background for stats boxes */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px; /* Space between boxes on small screens */
+    height: 140px;
+}
+
+
+@media (min-width: 768px) {
+    .team-stats {
+        margin-bottom: 0; /* Remove bottom margin on larger screens */
+    }
+}
+
+.team-stats .stat-label {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-stats .stat-label svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    fill: white; /* Color for icons */
+}
+
+
+.team-stats .stat-value {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.team-stats .stat-value.wins {
+    color: #67F643; /* Green color for wins */
+}
+
+.team-stats .stat-value.losses {
+    color: #EF3E3E; /* Red color for losses */
+}
+
+
+.team-stats .stat-value.tie {
+    color: #30B0C7; /* Red color for losses */
+}
+
+
+/* Tabs Section */
+.team-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444; /* Separator line below tabs */
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #bbb; /* Default tab text color */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    border-bottom: 2px solid transparent; /* Underline for active tab */
+}
+
+.tab-button:hover {
+    color: white;
+}
+
+.tab-button.active {
+    color: white;
+    font-weight: bold;
+    border-bottom-color: gold; /* Gold underline for active tab */
+}
+
+/* Content Area (Player Grid / Coach List) */
+.tab-content {
+    /* margin:0 auto */
+}
+
+
+/* Player Grid */
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Gap between grid items */
+    justify-content: center; /* Center grid items horizontally */
+}
+
+/* Player Card */
+.player-card {
+    background-color: #3f3f3fba; /* Dark card background */
+    border-radius: 8px;
+    border: 1px solid gray; /* Corrected border declaration */
+    padding: 15px;
+    display: flex;
+    width: 270px;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    /* Removed duplicate border: 1px solid #3a3a3a; */
+}
+
+.player-card:hover {
+    background-color: #3a3a3a; /* Darker background on hover */
+}
+
+.player-image {
+    width: 75px; /* Size of player image */
+    height: 75px;
+    border-radius: 50%; /* Circular image */
+    overflow: hidden; /* Clip image to circle */
+    margin-right: 15px;
+    
+}
+
+.player-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the circular area */
+}
+
+.player-info {
+    flex-grow: 1; /* Allow info to take available space */
+}
+
+.player-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.player-position {
+    font-size: 0.9rem;
+    color: #bbb; /* Lighter text */
+    margin-bottom: 3px;
+}
+
+.player-jersey {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+.player-arrow {
+    display: flex;
+    /* align-items: center; */
+     margin-left: 10px;
+}
+
+.player-arrow svg {
+    width: 18px;
+    height: 18px;
+    fill: rgb(255, 255, 255); /* Gold color for the arrow */
+}
+
+
+/* Basic Coach List Styling (if using PlayerCard for coaches) */
+.coach-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Similar grid as players */
+    gap: 20px;
+}
+
+/* Adjustments for coach cards if using PlayerCard */
+.coach-list .player-card .player-jersey {
+    display: none; /* Hide jersey number for coaches */
+}
+
+/* Add responsiveness if needed using media queries */
+/* Example: Adjust grid columns on smaller screens */
+@media (max-width: 767.98px) {
+    .player-grid,
+    .coach-list {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+    .team-header .row {
+        flex-direction: column; /* Stack header content on small screens */
+    }
+     .team-logo-section {
+         margin-bottom: 20px; /* Space below logo section */
+     }
+     .team-stats {
+         margin-bottom: 10px; /* Space between stats boxes when stacked */
+     }
+}
+
+/* Add styles for the Player/Coach Profile Modal */
+.profile-modal-content {
+    background-color: #1f1f1f45; /* Dark background */
+    color: white;
+    border-radius: 8px;
+    border:1px solid gray;
+    position: relative; /* Needed for absolute positioning of close button */
+    padding: 20px 0; /* Add padding to the modal content */
+    text-align: center; /* Center content inside the modal */
+}
+
+.profile-modal-content .close-button-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+.profile-modal-content .close-button-modal:hover {
+    opacity: 1;
+}
+
+
+.profile-modal-content .profile-modal-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center; /* Ensure title is centered */
+    padding-top:30px
+}
+
+.profile-modal-image-container {
+    width: 180px; /* Size of the circular image */
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px auto; /* Center the image and add space below */
+ 
+}
+
+.profile-modal-image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-modal-details {
+    text-align: left; /* Align text left for details */
+    width: 80%; /* Control the width of the details section */
+    margin: 0 auto; /* Center the details block */
+}
+
+.profile-modal-details .detail-line {
+    display: flex;
+    justify-content: space-between; /* Space out label and value */
+    font-size: 0.9rem;
+    
+}
+
+.profile-modal-details .detail-line span {
+    color: #fff /* Lighter color for labels */
+
+}
+
+
+
+.profile-modal-details .detail-separator {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: gray;
+    margin: 3px 0; /* Space above and below separator */
+}
+
+/* Adjust reactstrap modal overrides if needed */
+/* Example: Remove default modal header/footer padding if you are using custom ones */
+/* .modal-content {
+    padding: 0;
+} */

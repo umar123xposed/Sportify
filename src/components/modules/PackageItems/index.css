@@ -1,0 +1,153 @@
+/* Styling for the main item card */
+.package-item-card {
+    background-color: #373737; /* Dark background */
+    border-radius: 8px;
+    padding: 15px 20px; /* Adjust padding */
+    margin-bottom: 15px; /* Space between items */
+    border: 1px solid #444; /* Subtle border */
+    color: white; /* Default text color */
+    transition: all 0.3s ease-in-out; /* Smooth transition for expand/collapse */
+    overflow: hidden; /* Hide overflow when collapsed */
+}
+
+/* Styling for the header (always visible part) */
+.package-item-card .item-header {
+    cursor: pointer; /* Indicate clickable header */
+}
+
+/* Checkbox styling (basic, customize as needed) */
+.package-item-card .item-checkbox {
+    /* Add custom styling for checkbox if desired */
+     width: 18px;
+     height: 18px;
+     cursor: pointer;
+     /* Example custom checkbox styling - requires more CSS */
+     /* appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     border: 1px solid #bbb;
+     border-radius: 4px;
+     outline: none;
+     position: relative; */
+}
+
+/* .package-item-card .item-checkbox:checked {
+    background-color: gold;
+    border-color: gold;
+} */
+
+
+/* Item Title styling */
+.package-item-card .item-title {
+    font-size: 0.9rem;
+    user-select: none; /* Prevent text selection when clicking header */
+}
+
+/* Delete button styling */
+.package-item-card .delete-item-button {
+    background-color: transparent;
+    color: #f44336; /* Red color for delete */
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.package-item-card .delete-item-button svg {
+    fill: #f44336; /* Color the SVG icon red */
+    margin-right: 5px;
+}
+
+/* Dropdown arrow styling */
+.package-item-card .dropdown-arrow-container {
+    display: flex;
+    align-items: center;
+     /* No specific styling needed here, styles applied to the SVG */
+}
+
+.package-item-card .dropdown-arrow {
+     fill: white; /* Color the arrow white */
+     transition: transform 0.3s ease-in-out; /* Smooth rotation */
+}
+
+.package-item-card .dropdown-arrow.up {
+    transform: rotate(180deg); /* Rotate up when expanded */
+}
+
+.package-item-card .dropdown-arrow.down {
+    transform: rotate(0deg); /* Rotate down when collapsed */
+}
+
+/* Styling for the collapsible content area */
+.package-item-card .item-details-content {
+    /* Add padding or adjust layout if needed */
+}
+
+/* Styling for individual variant details within the expanded section */
+.package-item-card .variant-details {
+    /* Styling for the container of variant image and info */
+}
+
+.package-item-card .variant-image {
+    width: 80px; /* Fixed width for variant images */
+    height: 80px; /* Fixed height */
+    object-fit: cover;
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+.package-item-card .variant-info {
+    /* Styling for the text and options next to the image */
+}
+
+.package-item-card .variant-description {
+    font-size: 0.9rem;
+    color: #ffffff; /* Lighter color for description */
+    margin-bottom: 5px;
+}
+
+/* Styling for color and size option labels */
+.package-item-card .option-label {
+    font-size: 0.9rem;
+    color: white;
+    
+}
+
+/* Styling for color circles */
+.package-item-card .color-circle {
+    width: 20px; /* Size of the color circle */
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid transparent; /* Transparent border for non-selected */
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.package-item-card .color-circle.selected {
+    border-color: gold; /* Gold border when selected */
+}
+
+/* Styling for size boxes */
+.package-item-card .size-box {
+    background-color: #373737; /* Dark background */
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.package-item-card .size-box.selected {
+    background-color: gold; /* Gold background when selected */
+    color: black; /* Black text on gold */
+    border-color: gold;
+}
+
+/* Styling for the horizontal separator line */
+.package-item-card .item-separator {
+    border: none;
+    height: 1px;
+    background-color: #444; /* Dark line color */
+    margin-top: 10px; /* Space above line */
+    margin-bottom: 0; /* No space below line */
+}

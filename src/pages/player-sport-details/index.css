@@ -1,0 +1,146 @@
+/* Custom styles for the modal dialog and content */
+
+
+.basic-profile-modal .modal-content {
+    background-color: #2a2a2a; /* Dark background */
+    color: white; /* Default text color */
+    border-radius: 12px; /* Rounded corners */
+    border: none; /* No default border */
+    padding: 20px; /* Internal padding */
+    position: relative; /* Needed for absolute positioning of close button */
+    /* filter: blur(10px); */
+}
+
+/* Styling for the modal body to remove default padding */
+.basic-profile-modal .modal-body {
+    padding: 0; /* Remove default modal body padding */
+    
+
+    border-radius: 8px;
+    /* filter: blur(10px); */
+}
+
+.basic-profile-modal .modal-body-content {
+     padding: 10px; /* Ensure custom padding is applied if needed */
+     
+}
+
+
+/* Close Button Styling */
+.basic-profile-modal .close-button {
+    position: absolute;
+    top: -10px;
+    right:-10px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 1.5rem; /* Size of the X */
+    cursor: pointer;
+    z-index: 10; /* Ensure it's above other content */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.basic-profile-modal .close-button svg {
+     fill: black /* Color the SVG icon white */
+}
+
+
+/* Modal Header Content (Title and Upgrade Button) */
+.basic-profile-modal .modal-header-content {
+    padding-bottom: 5px; /* Space below the header content */
+    /* border-bottom: 1px solid #444; */
+}
+
+.basic-profile-modal .modal-title {
+    font-size: 1.3rem; /* Size for "QR Code" title */
+    font-weight: bold;
+    margin-bottom: 0; /* Remove default margin */
+}
+
+.basic-profile-modal .upgrade-button {
+    width: fit-content;
+    height: auto;
+    background-color: #444; /* Darker background */
+    color: white; /* Gold text */
+    border: 1px solid gold; /* Gold border */
+    border-radius: 20px; /* Pill shape */
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.basic-profile-modal .upgrade-button svg {
+    fill: white; /* Color the SVG icon gold */
+    margin-right: 5px;
+}
+
+
+
+
+.basic-profile-modal .qr-generate-section svg {
+    fill: black; /* Color the QR icon black */
+}
+
+.basic-profile-modal .qr-generate-section span {
+    /* Styling for "Generate QR Code" text */
+    font-size: 1rem;
+    margin-left: 10px; /* Space between icon and text */
+    flex-grow: 1; /* Allow text to take up space */
+}
+
+
+/* Detailed Information Section */
+.basic-profile-modal .detailed-info-section {
+    /* background-color: #3a3a3a; Slightly lighter dark background */
+    border-radius: 8px;
+    /* padding: 15px 20px; */
+}
+
+.basic-profile-modal .detailed-info-header .section-title {
+    font-size: 1rem; /* Size for "Detailed Information" title */
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.basic-profile-modal .edit-button {
+    background-color: transparent;
+    color: white; /* Gold text */
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+     display: flex;
+    align-items: center;
+}
+
+.basic-profile-modal .edit-button svg {
+   
+    margin-right: 5px;
+}
+
+/* Information Items (Name, Nickname, etc.) */
+.basic-profile-modal .info-item {
+    padding: 10px; /* Vertical padding */
+    border-bottom: 1px solid #525252; /* Separator line between items */
+    background-color: #000000b3;
+    
+}
+
+.basic-profile-modal .info-item .item-label {
+    font-size: 0.9rem;
+    color: white /* Lighter color for labels */
+}
+
+.basic-profile-modal .info-item .item-value {
+    font-size: 0.9rem;
+    color: white; /* White color for values */
+    
+}
+
+/* Style for the last info item to remove the bottom border */
+.basic-profile-modal .info-item.no-border {
+    border-bottom: none;
+}

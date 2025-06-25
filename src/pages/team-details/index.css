@@ -1,0 +1,547 @@
+/* General page container */
+.team-page-container {
+  min-height: 100vh;
+  padding: 40px 0;
+  /* Add padding top and bottom */
+  color: white;
+  /* Default text color */
+  font-family: sans-serif;
+  /* Use a common sans-serif font or your project's font */
+}
+
+/* Team Header Section */
+.team-header {
+  background-color: #0e0e0e;
+  /* Slightly lighter dark background */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #3a3a3a;
+  /* Subtle border */
+}
+
+.team-stats-row {
+  /* margin-bottom: 10px; */
+}
+
+.edit-team-btn {
+  border: 1px solid gold;
+    border-radius: 20px;
+    background: transparent;
+    color: #fff;
+    padding: 6px 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+}
+.edit-team-btn:disabled{
+  background-color: #373737;
+  border: 1px solid white;
+  color: #747474
+}
+
+.team-header .row {
+  align-items: center;
+  /* Vertically align items in the row */
+}
+
+.team-logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.team-logo {
+  width: 150px;
+  /* Adjust size as needed */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.team-info {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: #373737;
+}
+
+.team-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.team-counts {
+  font-size: 0.9rem;
+  color: #fff;
+  /* Lighter text color */
+  margin-bottom: 5px;
+  padding: 5px 0;
+}
+
+.coach-name-tag {
+  display: inline-block;
+  padding: 4px 24px;
+  color: #eee;
+  /* Light text */
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.team-stats {
+  background-color: #3a3a3a;
+  /* Dark background for stats boxes */
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+  /* Space between boxes on small screens */
+  height: 140px;
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .team-stats {
+    margin-bottom: 0;
+    height: 100px;
+    /* Remove bottom margin on larger screens */
+  }
+
+  .gold_card_md {
+    /* margin-top: 0 !important; */
+
+}
+
+.team-header{
+  padding: 10px !important;
+}
+.stattttt{
+  padding: 5px !important;
+
+}
+
+
+}
+
+.team-stats .stat-label {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-stats .stat-label svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  fill: white;
+  /* Color for icons */
+}
+
+
+.team-stats .stat-value {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.team-stats .stat-value.wins {
+  color: #67F643;
+  /* Green color for wins */
+}
+
+.team-stats .stat-value.losses {
+  color: #EF3E3E;
+  /* Red color for losses */
+}
+
+
+.team-stats .stat-value.tie {
+  color: #30B0C7;
+  /* Red color for losses */
+}
+
+
+/* Tabs Section */
+.team-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  /* Separator line below tabs */
+}
+
+.tab-button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #bbb;
+  /* Default tab text color */
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+  /* Underline for active tab */
+}
+
+.tab-button:hover {
+  color: white;
+}
+
+.tab-button.active {
+  color: white;
+  font-weight: bold;
+  border-bottom-color: gold;
+  /* Gold underline for active tab */
+}
+
+/* Content Area (Player Grid / Coach List) */
+.tab-content {
+  /* margin:0 auto */
+}
+
+
+/* Player Grid */
+.player-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Player Card */
+.player-card-team {
+  background-color: #3f3f3fba;
+  /* Dark card background */
+  border-radius: 8px;
+  border: 1px solid gray;
+  /* Corrected border declaration */
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+}
+
+.player-card-team:hover {
+  background-color: #3a3a3a;
+  /* Darker background on hover */
+}
+
+.player-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.player-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-info {
+  flex: 1;
+}
+
+.player-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.player-position {
+  font-size: 14px;
+  color: #666;
+}
+
+.player-jersey {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.player-arrow {
+  color: #999;
+}
+
+/* Basic Coach List Styling (if using PlayerCard for coaches) */
+.coach-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Adjustments for coach cards if using PlayerCard */
+.coach-list .player-card-team .player-jersey {
+  display: none;
+  /* Hide jersey number for coaches */
+}
+
+/* Add styles for the Player/Coach Profile Modal */
+.profile-modal-content {
+  padding: 20px;
+  position: relative;
+}
+
+.close-button-modal {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.profile-modal-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.profile-modal-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-modal-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-modal-details {
+  padding: 0 20px;
+}
+
+.detail-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #666;
+}
+
+.detail-separator {
+  width: 100%;
+  margin: 0;
+  border-color: #eee;
+}
+
+/* QR Code Card Styles */
+.gold_card {
+  /* background: linear-gradient(135deg, #FFD700, #FFA500); */
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 20px;
+  color: white;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.bg-right {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .team-header {
+    padding: 15px;
+  }
+
+  .team-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-name {
+    font-size: 20px;
+  }
+
+  .team-stats {
+    padding: 10px;
+    height: 110px !important;
+  }
+
+  .stat-value {
+    font-size: 20px;
+  }
+
+  .player-grid,
+  .coach-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .player-card-team {
+    padding: 12px;
+    margin: 0 !important
+  }
+  .player-grid{
+    gap: 10px;
+  }
+
+  .player-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .player-name {
+    font-size: 16px !important;
+  }
+
+  .player-position {
+    font-size: 12px;
+  }
+
+  .tab-button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .gold_card {
+    padding: 12px;
+  }
+
+  .gold_card h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .team-name {
+    font-size: 18px;
+  }
+
+  .team-counts {
+    font-size: 14px;
+  }
+
+  .coach-name-tag {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+  }
+
+  .stat-value {
+    font-size: 18px;
+  }
+  .team-stats{
+    height: 100px !important;
+  }
+
+  .profile-modal-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .detail-line {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .player-grid,
+  .coach-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.qr-flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  min-height: 80px;
+}
+
+.qr-flex-row > div {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.qr-flex-row img,
+.qr-flex-row svg {
+  /* max-width: 60px;
+  min-width: 32px; */
+
+  flex-shrink: 0;
+}
+
+.qr-flex-row h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1 1 auto;
+}
+
+@media (max-width: 600px) {
+  .qr-flex-row {
+    gap: 8px;
+    min-height: 60px;
+  }
+  .qr-flex-row img,
+  .qr-flex-row svg {
+    /* max-width: 36px;
+    min-width: 18px;
+    width: 28px; */
+  }
+  .qr-flex-row h3 {
+    font-size: 1rem;
+    margin-left: 6px;
+  }
+  .gold_card {
+    min-height: 70px;
+    padding: 8px;
+  }
+}
+
+.swal2-popup{
+  background-color: rgb(72 72 72) !important;
+}
+
+.swal2-confirm{
+  background: var(--primary-grad-color1) !important;
+  color: black !important;
+}
+
+.swal2-confirm:focus{
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.swal2-cancel{
+  background-color: transparent !important;
+  border: 1px solid gold;
+}

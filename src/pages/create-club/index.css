@@ -1,0 +1,245 @@
+.create-club-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    color: #ffffff; /* White text */
+    padding: 20px;
+}
+
+.backbutton {
+
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-icon {
+    margin-right: 5px;
+}
+
+
+.create-club-title {
+    color: #ffffff; /* White text for the title */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.progress-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.progress-indicator .step {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #444; /* Grey for incomplete steps */
+    margin: 0 5px;
+}
+
+.progress-indicator .step.active {
+    background-color: #FFD700; /* Gold for active/complete steps */
+}
+
+/* Add lines between steps if needed for design */
+.progress-indicator .step + .step {
+     position: relative;
+}
+
+.progress-indicator .step + .step::before {
+    content: '';
+    position: absolute;
+    left: -10px; /* Adjust based on margin and step size */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /* Adjust based on margin */
+    height: 2px;
+    background-color: #444; /* Grey for lines */
+}
+
+.progress-indicator .step.active + .step::before {
+     background-color: #FFD700; /* Gold for lines between active steps */
+}
+
+
+.create-club-card {
+    background-color: #373737; /* Slightly lighter dark for the card */
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+}
+
+.form-label {
+    color: #ffffff; /* Lighter text for labels */
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    background-color: #444 !important;
+    border: 1px solid gray;
+    color: #fff;
+    width: 100%;
+}
+
+
+
+.form-input::placeholder {
+    color: #e8e7e743 !important; /* Lighter grey placeholder text */
+
+}
+
+/* Style for disabled role input */
+.form-input:disabled {
+    background-color: #555; /* Slightly different background for disabled */
+    color: #dddddd; /* Lighter text for disabled */
+    opacity: 1; /* Do not dim disabled input */
+}
+
+
+/* If using a phone input library, you might need to style its components */
+.phone-input-container .form-input {
+    padding-left: 50px; /* Make space for country code/flag */
+}
+/* Add styling for the country dropdown/flag if using a library */
+
+.containerbutton{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.next-button {
+    width: 70%;
+    background: linear-gradient(90deg, #DDA027 0.01%, #CE9B2B 31.98%, #FEF48E 68.02%, #FFD046 100%);
+    color: #2c2c2c; /* Dark text */
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.code-button {
+    width: 70%;
+    background-color: #241C19;
+    color: #ffffff; /* Dark text */
+    border: 1px solid gray;
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+
+.next-button:hover {
+     background: linear-gradient(to right, #FFA500, #FFD700);
+}
+
+.modal-body{
+    background-color: #373737;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Club Code Modal Styling */
+.club-code-modal .modal-content {
+    background-color: #373737; /* Card background color */
+    color: #ffffff; /* White text */
+    border-radius: 10px;
+    padding: 0; /* Remove default padding */
+}
+
+.club-code-modal-body {
+    padding: 20px;
+    position: relative; /* Needed for absolute positioning of close icon */
+}
+
+.modal-close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer;
+    color: #ffffff;
+    z-index: 10;
+}
+
+.modal-content-wrapper {
+    padding-top: 10px; /* Add padding below close icon */
+}
+
+.modal-title {
+    color: #ffffff;
+    font-size: 1.1rem; /* Adjust font size */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.modal-description {
+    color: #cccccc; /* Lighter text color */
+    font-size: 0.8rem; /* Adjust font size */
+    margin-bottom: 20px;
+}
+
+.club-code-input-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between code display and button */
+}
+
+.club-code-display {
+    background-color: #444; /* Input background color */
+    border: 1px solid gray; /* Border color */
+    border-radius: 5px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    flex-grow: 1; /* Allow it to take available space */
+}
+
+.copy-code-button {
+    background-color: transparent; /* Transparent background */
+    border: 1px solid gray; /* Border color */
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+.copy-code-button svg path {
+    stroke: white; /* Ensure SVG path color is white */
+}
+
+.iti {
+    width: 100%;
+}
+
+.iti__input {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.iti__input:focus {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.validation-text {
+    color: #ff6b6b;
+    font-size: 12px;
+    margin-top: 5px;
+}

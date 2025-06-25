@@ -1,0 +1,26 @@
+.error-image {
+    
+
+    div {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-size: 40px !important;
+        font-weight: 600;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+
+      span {
+        font-size: 30px !important;
+        font-weight: 600;
+        color: white;
+      }
+    }
+  }

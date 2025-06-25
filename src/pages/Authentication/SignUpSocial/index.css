@@ -1,0 +1,184 @@
+.login_container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 2fr 4fr;
+}
+
+.bord {
+  border: 1px solid #000;
+}
+
+
+.login_right_fields {
+
+
+
+  background: url("./../../../assets//signinleftBg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+
+
+.input-field-login {
+
+}
+
+.login_left_fields {
+  justify-self: center;
+  align-self: center;
+  overflow-y: hidden;
+  position: relative;
+
+}
+
+.login-white {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  max-width: 200px;
+  margin-left: 10px;
+}
+
+.main-logo-white {
+  height: 240px;
+  width: 240px;
+  object-fit: contain;
+}
+
+.main-logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+.login-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
+
+.copy-write-white {
+
+  text-align: center;
+  max-width: 400px;
+  color: #fff;
+  font-size: 24px;
+
+}
+
+.copy-write {
+  font-size: 1rem;
+
+}
+
+.already-text{
+
+ font-size: 16px;
+ color: var(--text-white);
+ cursor: pointer;
+
+
+}
+.login-text{
+font-size: 16px;
+cursor: pointer;
+}
+.terms-service-text{
+  font-size: 14px;
+  color: var(--text-white);
+  font-weight: 250;
+  /* position: absolute; */
+  bottom: 20px;
+
+}
+
+.left-text-blur{
+background-image: url(./../../../assets/background.png);
+}
+.logo-text{
+  font-family: var(--secondary-font);
+  font-size: 60px;
+
+}
+.logo-description{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+ font-weight: 200 !important;
+ max-width: 300px;
+}
+
+
+
+
+@media only screen and (min-width : 390px) and (max-width: 481px) {
+  .login_container {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+  .login_left_fields {
+    display: none;
+
+  }
+
+  .right-feild {
+    width: 90% !important;
+    height: 100vh !important;
+  }
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 481px) and (max-width: 768px) {
+.login_container {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+  .login_left_fields {
+    display: none;
+
+  }
+
+  .right-feild {
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: center;
+   height: 100vh;
+    width: 60% !important;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 767px) and (max-width: 992px) {
+.login_container {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+  .login_left_fields {
+    display: none;
+
+  }
+
+  .right-feild {
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: center;
+    height: 100vh;
+    width: 40% !important;
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 993px) and (max-width: 1200px) {
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1201px) and (max-width: 1350px) {}
